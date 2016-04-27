@@ -18,6 +18,7 @@ func _fixed_process(delta):
 		start()
 		
 func _input(event):
-	teleport = true
+	if event.is_action_pressed("ui_cancel"):
+		teleport = true
 
 
